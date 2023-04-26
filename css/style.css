@@ -223,7 +223,95 @@ footer{
     background-color: #282828;
     position: relative;
     z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
 }
+
+footer img{
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+footer div.track-name{
+    align-items: center;
+}
+
+footer div.info-track{
+    margin-right: 2rem;
+}
+
+footer div.track-name i{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+footer div.controls{
+    width: 33%;
+}
+
+footer nav.player{
+    padding-bottom: 1rem;
+}
+
+footer nav.player ul{
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav.player i{
+    font-size: 1.5rem;
+    padding: 0 0.5rem
+}
+
+footer nav.player i.play{
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+footer div.timeline{
+    align-items: center;
+}
+
+footer div.timeline div.preview{
+    width: 100%;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 2px;
+    margin: 0 1rem;
+}
+
+footer div.timeline div.viewed{
+    width: 15%;
+    height: 5px;
+    background-color: #c1c1c1;
+    border-radius: 2px;
+}
+
+footer div.options ul{
+    align-items: center;
+}
+
+footer div.options i{
+    font-size: 1rem;
+    padding: 0 0.7rem;
+}
+
+footer div.options div.volume{
+    width: 120px;
+    height: 5px;
+    background-color: #5a5a5a;
+    border-radius: 2px;
+}
+
+footer div.options div.user-volume{
+    width: 30px;
+    height: 5px;
+    background-color: #c1c1c1;
+    border-radius: 2px;
+
+}
+
 
 
 /* *************** RESPONSIVE **************/
