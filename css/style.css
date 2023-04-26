@@ -238,13 +238,19 @@ footer div.track-name{
 }
 
 footer div.info-track{
-    margin-right: 2rem;
+    margin-right: 5%;
 }
 
 footer div.track-name i{
     font-size: 1rem;
     margin-right: 1rem;
 }
+
+footer div.interactive{
+    width: 10vw;
+}
+
+/* CONTROLS */
 
 footer div.controls{
     width: 33%;
@@ -298,14 +304,14 @@ footer div.options i{
 }
 
 footer div.options div.volume{
-    width: 120px;
+    width: 6vw;
     height: 5px;
     background-color: #5a5a5a;
     border-radius: 2px;
 }
 
 footer div.options div.user-volume{
-    width: 30px;
+    width: 30%;
     height: 5px;
     background-color: #c1c1c1;
     border-radius: 2px;
