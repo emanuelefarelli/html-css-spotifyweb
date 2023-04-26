@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    max-width: 1440px;
+}
+
+main{
+    height: calc(100vh - 100px);
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    border: none;
+}
+
+/* GENERAL */
+
+.flex{
+    display: flex;
+}
+
+.strong{
+    font-weight: 700;
+}
+
+.s-txt{
+    font-size: 1rem;
+}
+
+.m-txt{
+    font-size: 1.2rem;
+}
+
+.l-txt{
+    font-size: 1.8rem;
+}
+
+.white{
+    color: white;
+}
+
+.grey{
+    color: #717171;
+}
+
+
+/******************** HEADER **************/
+
+header{
+    width: 200px;
+    background-color: black;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header div.logo{
+    height: 80px;
+    padding: 20px 20px;
+}
+
+header div.logo img{
+    height: 100%;
+}
+
+header nav.user-nav img{
+    height: 2rem;
+}
+
+/******************** CATALOG ****************/
+
+div.catalog{
+    width: calc(100% - 200px);
+    background-color: #141922;
+}
+
+/* UPGRADE */
+
+section.upgrade{
+    height: 100px;
+    background-color: #080b12;
+}
+
+/******************** FOOTER ****************/
+
+footer{
+    height: 100px;
+    background-color: #282828;
+}
