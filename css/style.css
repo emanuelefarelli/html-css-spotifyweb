@@ -5,7 +5,10 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rubik', sans-serif;
     max-width: 1440px;
 }
 
@@ -32,7 +35,7 @@ button{
 }
 
 .s-txt{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .m-txt{
@@ -48,32 +51,88 @@ button{
 }
 
 .grey{
-    color: #717171;
+    color: #a3a3a3;
 }
 
 
 /******************** HEADER **************/
 
+/* PARTE SUPERIORE */
 header{
     width: 200px;
     background-color: black;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1rem;
+}
+
+header.desktop{
+    display: flex;
+}
+
+header.mobile{
+    display: none;
 }
 
 header div.logo{
-    height: 80px;
-    padding: 20px 20px;
+    height: 70px;
+    padding: 15px 0;
 }
 
 header div.logo img{
     height: 100%;
 }
 
-header nav.user-nav img{
-    height: 2rem;
+header nav.user-nav li{
+    margin: 0.5rem 0;
 }
 
+header nav.user-nav img{
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+header nav.playlist{
+    margin-top: 1.5rem;
+}
+
+header nav.playlist li{
+    padding: 0.5rem 0;
+}
+
+header nav.playlist button{
+    background-color: black;
+}
+
+header nav.playlist button i{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #a3a3a3;
+    margin-right: 0.5rem;
+}
+
+/* PARTE INFERIORE */
+
+header div.bottom button{
+    background-color: black;
+}
+
+header div.bottom button img{
+    height: 1rem;
+    padding-right: 1rem;
+    vertical-align: middle;
+    filter: brightness(0.6);
+}
+
+header div.bottom a{
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+header div.bottom div.user,
+header div.bottom button{
+    margin: 0.5rem 0;
+}
 /******************** CATALOG ****************/
 
 div.catalog{
@@ -93,4 +152,45 @@ section.upgrade{
 footer{
     height: 100px;
     background-color: #282828;
+}
+
+
+/* *************** RESPONSIVE **************/
+
+@media screen and (max-width: 552px) {
+    /* HEADER */
+
+    header{
+        width: 50px;
+        padding: 0.7rem;
+    }
+
+    header.desktop{
+        display: none;
+    }
+
+    header.mobile{
+        display: flex;
+    }
+
+    header.mobile li.logo{
+        margin-bottom: 0.7rem;
+    }
+
+    header.mobile nav.bottom-mobile img{
+        width: 20px;
+        margin-bottom: 0.5rem;
+    }
+
+    header.mobile nav.bottom-mobile i{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* CATALOG */
+
+    div.catalog{
+        width: calc(100% - 50px);
+    } 
+
 }

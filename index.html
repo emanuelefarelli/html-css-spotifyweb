@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Spotify</title>
 
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Open+Sans:wght@400;500;700;800&family=Quicksand:wght@500&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <main class="flex">
-        <header class="flex">
+        <header class="desktop">
 
             <!-- PARTE SUPERIORE HEADER -->
 
@@ -44,16 +50,20 @@
                     </ul>
                 </nav>
                 <nav class="playlist">
-                    <h1 class="s-txt white strong">
-                        PLAYLIST
-                    </h1>
-                    <button>
-                        <i class="fa-solid fa-plus"></i>
-                        <span class="s-txt grey">
-                            Crea playlist
-                        </span>
-                    </button>
                     <ul class="my-playlist s-txt grey">
+                        <li>
+                            <h1 class="s-txt white strong">
+                                PLAYLIST
+                            </h1>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fa-solid fa-plus"></i>
+                                <span class="s-txt grey">
+                                    Crea playlist
+                                </span>
+                            </button>
+                        </li>
                         <li>
                             Nome Playlist
                         </li>
@@ -89,12 +99,41 @@
                     </span>
                 </button>
                 <hr>
-                <div class="flex user">
+                <div class="flex user m-txt white strong">
                     <i class="fa-regular fa-user"></i>
-                    <span class="m-txt white strong">
+                    <a class="m-txt white strong" href="">
                         John Doe
-                    </span>
+                    </a>
                 </div>
+            </div>
+        </header>
+        <header class="mobile">
+            <nav class="user-mobile">
+                <ul>
+                    <li class="logo">
+                        <img src="img/logo-small.svg" alt="small logo brand">
+                    </li>
+                    <li>
+                        <img src="img/home.svg" alt="Home icon">
+                    </li>
+                    <li>
+                        <img src="img/search.svg" alt="Search icon">
+                    </li>
+                    <li>
+                        <img src="img/libreria.svg" alt="Librery icon">
+                    </li>
+                </ul>
+            </nav>
+            <nav class="bottom-mobile">
+                <ul>
+                    <li>
+                        <img src="img/download.svg" alt="download icon">
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-user white"></i>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <div class="catalog">
             <section class="upgrade">
