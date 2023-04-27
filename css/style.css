@@ -10,7 +10,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Quicksand', sans-serif;
     font-family: 'Rubik', sans-serif;
-    max-width: 1440px;
+    /* max-width: 1440px; */
 }
 
 main{
@@ -190,7 +190,7 @@ nav.upper-nav a{
 /* TRACKS */
 
 div.tracks{
-    padding: 10px;
+    padding: 5px;
 }
 
 div.tracks h1,
@@ -200,10 +200,21 @@ div.tracks p{
 
 div.tracks li.track{
     text-align: center;
-    width: calc(100% / 6);
-    padding: 0.5rem;
+    width: calc((100vw - 230px) / 6);
+    padding: 5px;
+    position: relative;
 }
 
+div.tracks li.track i{
+    color: white;
+    font-size: 70px;
+    position: absolute;
+    left: 50%;
+    top: calc(((100vw - 230px) / 6) / 2);
+    transform: translate(-50%, -50%);
+    padding: calc((((100vw - 230px) / 6) / 2) - 40px);
+    display: none;
+}
 
 div.tracks li.track h2,
 div.tracks li.track p{
@@ -213,6 +224,11 @@ div.tracks li.track p{
 
 div.tracks li.track img{
     width: 100%;
+}
+
+div.tracks li.track:hover i{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.534);
 }
 
 
@@ -327,9 +343,13 @@ footer div.options div.user-volume{
     /* TRACKS */
     
     div.tracks li.track{
-        width: calc(100% / 4);
+        width: calc((100vw - 230px) / 4);
     }
 
+    div.tracks li.track i{
+        top: calc(((100vw - 230px) / 4) / 2);
+        padding: calc((((100vw - 230px) / 4) / 2) - 40px);
+    }
 }
 
 @media screen and (max-width: 639px){
@@ -337,9 +357,13 @@ footer div.options div.user-volume{
     /* TRACKS */
 
     div.tracks li.track{
-        width: calc(100% / 2);
+        width: calc((100vw - 230px) / 2);
     }
 
+    div.tracks li.track i{
+        padding: calc((((100vw - 230px) / 2) / 2) - 40px);
+        top: calc(((100vw - 230px) / 2) / 2);
+    }
 }
 
 @media screen and (max-width: 552px) {
