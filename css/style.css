@@ -72,7 +72,7 @@ header{
     background-color: black;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 header.desktop{
@@ -94,11 +94,26 @@ header div.logo img{
 
 header nav.user-nav li{
     margin: 0.5rem 0;
+    padding-left: 1rem;
 }
 
 header nav.user-nav img{
     height: 1.5rem;
     vertical-align: middle;
+}
+
+header nav.user-nav li.home{
+    position: relative;
+}
+
+header nav.user-nav li.home div.green-line{
+    height: 30px;
+    width: 2px;
+    background-color: #adff2f;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 header nav.playlist{
@@ -107,6 +122,8 @@ header nav.playlist{
 
 header nav.playlist li{
     padding: 0.5rem 0;
+    padding-left: 1rem;
+
 }
 
 header nav.playlist button{
@@ -121,6 +138,10 @@ header nav.playlist button i{
 }
 
 /* PARTE INFERIORE */
+
+header div.bottom{
+    padding-left: 1rem;
+}
 
 header div.bottom button{
     background-color: black;
@@ -141,6 +162,21 @@ header div.bottom div.user,
 header div.bottom button{
     margin: 0.5rem 0;
 }
+
+header li:hover,
+header li:hover span,
+header div.bottom button:hover span{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header nav.playlist li button:hover i{
+    padding: 0.7rem;
+    background-color: white;
+}
+
 /******************** CATALOG ****************/
 
 div.catalog{
@@ -180,11 +216,26 @@ nav.upper-nav ul{
 
 nav.upper-nav ul li{
     padding: 1rem 1rem;
+    padding-bottom: 0.3rem;
 }
 
 nav.upper-nav a{
     color: #a3a3a3;
     font-size: 0.8rem;
+}
+
+nav.upper-nav li.green-line{
+    position: relative;
+}
+
+nav.upper-nav li.green-line div{
+    width: 30px;
+    height: 2px;
+    background-color: #adff2f;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /* TRACKS */
