@@ -72,7 +72,6 @@ header{
     background-color: black;
     flex-direction: column;
     justify-content: space-between;
-    /* padding: 1rem; */
 }
 
 header.desktop{
@@ -86,6 +85,7 @@ header.mobile{
 header div.logo{
     height: 70px;
     padding: 15px 0;
+    padding-left: 1rem;
 }
 
 header div.logo img{
@@ -204,6 +204,11 @@ section.upgrade button{
     font-size: 0.7rem;
 }
 
+section.upgrade button:hover{
+    padding: 0.9rem 2.2rem;
+    font-size: 0.9rem;
+}
+
 /* UPPER-NAV */
 
 nav.upper-nav ul{
@@ -236,6 +241,11 @@ nav.upper-nav li.green-line div{
     bottom: 0;
     left: 50%;
     transform: translate(-50%);
+}
+
+nav.upper-nav a:hover{
+    color: white;
+    font-weight: 500;
 }
 
 /* TRACKS */
@@ -294,6 +304,8 @@ footer{
     align-items: center;
     padding: 0.5rem;
 }
+
+/* TRACK-OPTIONS */
 
 footer img{
     height: 50px;
@@ -359,7 +371,24 @@ footer div.timeline div.viewed{
     height: 5px;
     background-color: #c1c1c1;
     border-radius: 2px;
+    position: relative;
 }
+
+footer div.handle{
+    height: 18px;
+    width: 18px;
+    background-color: white;
+    border: 1px lightgray solid;
+    border-radius: 50%;
+    position: absolute;
+    right: -9px;
+    top: -15px;
+    transform: translate(0,50%);
+    display: none;
+}
+
+
+/* OPTIONS */
 
 footer div.options ul{
     align-items: center;
@@ -382,10 +411,35 @@ footer div.options div.user-volume{
     height: 5px;
     background-color: #c1c1c1;
     border-radius: 2px;
-
+    position: relative;
 }
 
+/* HOVER FOOTER */
 
+footer div.track-name i:hover{
+    color: white;
+}
+
+footer div.controls i.play:hover{
+    font-size: 2.3rem;
+    padding: 0rem 0.9rem;
+}
+
+footer div.timeline:hover div.viewed{
+    background-color: #adff2f;
+}
+
+footer div.timeline:hover div.handle{
+    display: block;
+}
+
+footer div.volume:hover div.user-volume{
+    background-color: #adff2f;
+}
+
+footer div.volume:hover div.handle{
+    display: block;
+}
 
 /* *************** RESPONSIVE **************/
 
