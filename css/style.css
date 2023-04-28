@@ -273,7 +273,7 @@ div.tracks li.track i{
     left: 50%;
     top: calc(((100vw - 230px) / 6) / 2);
     transform: translate(-50%, -50%);
-    padding: calc((((100vw - 230px) / 6) / 2) - 40px);
+    padding: calc((((100vw - 230px) / 6) / 2) - 39px);
     display: none;
 }
 
@@ -453,7 +453,7 @@ footer div.volume:hover div.handle{
 
     div.tracks li.track i{
         top: calc(((100vw - 230px) / 4) / 2);
-        padding: calc((((100vw - 230px) / 4) / 2) - 40px);
+        padding: calc((((100vw - 230px) / 4) / 2) - 39px);
     }
 }
 
@@ -466,7 +466,7 @@ footer div.volume:hover div.handle{
     }
 
     div.tracks li.track i{
-        padding: calc((((100vw - 230px) / 2) / 2) - 40px);
+        padding: calc((((100vw - 230px) / 2) / 2) - 39px);
         top: calc(((100vw - 230px) / 2) / 2);
     }
 }
@@ -507,4 +507,14 @@ footer div.volume:hover div.handle{
         width: calc(100% - 50px);
     } 
 
+    /* TRACKS */
+
+    div.tracks li.track{
+        width: calc((100vw - 100px) / 2);
+    }
+
+    div.tracks li.track i{
+        padding: calc((((100vw - 100px) / 2) / 2) - 39px);
+        top: calc(((100vw - 100px) / 2) / 2);
+    }
 }
